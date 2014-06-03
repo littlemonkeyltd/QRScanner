@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package org.littlemonkey.qrscanner;
 
 import com.codename1.codescan.CodeScanner;
@@ -11,13 +7,34 @@ import com.codename1.system.NativeLookup;
 import com.codename1.ui.Display;
 
 /**
- *
+ * QRScanner uses built in ZBar on Android
+ * Falls back to CodeScanner on other platforms where supported
+ * 
+ * Removes dependence on a third party scanner being installed.
+ * 
+ * Needs additional build hints:
+ * 
+ * android.xapplication = <activity android:name="com.dm.zbar.android.scanner.ZBarScannerActivity" android:screenOrientation="landscape" android:label="@string/app_name" />
+ * android.xpermissions = <uses-permission android:name="android.permission.CAMERA"/><uses-feature android:name="android.hardware.camera" android:required="false"/>
+ * 
+ * And for release builds (only)
+ * android.proguardKeep =  -keep class net.sourceforge.zbar.** {*;}  
+ * 
+ * NOTE THERE NEEDS TO BE A SPACE BEFORE AND AFTER THIS VALUE
+ * 
+ * @see CodeScanner
+ * 
  * @author nick
  */
 public class QRScanner {
     
     private static ScanResult callback;
 
+    /**
+     * Scan a QR Code with callback
+     * 
+     * @param callback 
+     */
     public static void scanQRCode(ScanResult callback) {
         if (Display.getInstance().getPlatformName().equals("and")) {
             QRScanner.callback = callback;
@@ -35,6 +52,13 @@ public class QRScanner {
         }
     }
 
+    /**
+     * Scan a barcode with callback,
+     * Currently scans for EAN13 codes on Android.
+     * Change this in the native implementation.
+     * 
+     * @param callback 
+     */
     public static void scanBarCode(ScanResult callback) {
          if (Display.getInstance().getPlatformName().equals("and")) {
             QRScanner.callback = callback;
