@@ -25,7 +25,7 @@ Installation
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |android.xapplication |`<activity android:name="com.dm.zbar.android.scanner.ZBarScannerActivity" android:screenOrientation="landscape" android:label="@string/app_name" />`|
 |android.xpermissions |`<uses-permission android:name="android.permission.CAMERA"/><uses-feature android:name="android.hardware.camera" android:required="false"/>`        |
-|android.proguard.Keep|` -keep class net.sourceforge.zbar.** {*;} `*NOTE THERE NEEDS TO BE A SPACE BEFORE AND AFTER THIS VALUE*                                           | 
+|android.proguardKeep|` -keep class net.sourceforge.zbar.** {*;} `*NOTE THERE NEEDS TO BE A SPACE BEFORE AND AFTER THIS VALUE*                                           | 
 
 Example Code
 ------------
