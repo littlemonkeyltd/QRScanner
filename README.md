@@ -16,7 +16,7 @@ How to use
 Installation
 ------------
 
-1. Build or download the QRScanner.cn1lib file.
+1. Build or download the [QRScanner.cn1lib](https://github.com/littlemonkeyltd/QRScanner/releases/latest) file.
 2. Put the file the `libs` folder of your project.
 3. Right-click on your project and choose `Refresh Libs`
 4. Add the following build hints"
@@ -31,7 +31,7 @@ Example Code
 ------------
 Basically use `QRScanner` instead of `CodeScanner`.
 
-```
+```java
 QRScanner.scanQRCode(new ScanResult() {
     public void scanCompleted(String contents, String formatName, byte[] rawBytes) {
         Dialog.show("Completed", contents, "OK", null);
@@ -51,7 +51,7 @@ Converting an existing app
 It should pretty much be a drop in replacement for CodeScanner.  If you need to detect if code scanning is supported on the current platform then you need to keep the original check
 do not change this line to QRScanner:
 
-```
+```java
 if (CodeScanner.getInstance() != null) {
     QRScanner.scanQRCode(myScanResult);
 } else {
