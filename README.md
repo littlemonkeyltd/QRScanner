@@ -17,7 +17,7 @@ Installation
 ------------
 
 1. Install the [cn1-codescan](https://github.com/codenameone/cn1-codescan) library into your project.
-1. Build or download the [QRScanner.cn1lib](https://github.com/littlemonkeyltd/QRScanner/releases/latest) file.
+1. Build or download the [QRScanner.cn1lib](bin/QRScanner.cn1lib) file.
 2. Put the file the `libs` folder of your project.
 3. Right-click on your project and choose `Refresh Libs`
 
