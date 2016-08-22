@@ -58,8 +58,12 @@
 
     <target name="jar" depends="compile,Stubs">
         <mkdir dir="build/lib" />
+        <mkdir dir="build/stubs"/>
         <zip basedir="${build.classes.dir}" compress="false" destfile="build/lib/main.zip" />
         <zip basedir="build/stubs" compress="false" destfile="build/lib/stubs.zip" />
+        <copy file="codenameone_library_appended.properties" todir="build/lib" />
+        <copy file="codenameone_library_required.properties" todir="build/lib" />
+        <copy file="codenameone_library.properties" todir="build/lib" />
         <copy file="manifest.properties" todir="build/lib" />
         <antcall target="buildNativeIOS" />        
         <antcall target="buildNativeRIM" />        
@@ -69,6 +73,7 @@
         <antcall target="buildNativeME" />       
         <mkdir dir="dist" />
         <zip basedir="build/lib" compress="true" destfile="dist/${application.title}.cn1lib" />
+        <copy file="dist/${application.title}.cn1lib" tofile="../QRScannerDemo/lib/${application.title}.cn1lib" overwrite="true"/>
     </target>
 
     <target name="buildNativeRIM">

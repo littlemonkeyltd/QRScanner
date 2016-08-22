@@ -16,16 +16,10 @@ How to use
 Installation
 ------------
 
+1. Install the [cn1-codescan](https://github.com/codenameone/cn1-codescan) library into your project.
 1. Build or download the [QRScanner.cn1lib](https://github.com/littlemonkeyltd/QRScanner/releases/latest) file.
 2. Put the file the `libs` folder of your project.
 3. Right-click on your project and choose `Refresh Libs`
-4. Add the following build hints"
-
-|Key                  |Value                                                                                                                                             |
-|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-|android.xapplication |`<activity android:name="com.dm.zbar.android.scanner.ZBarScannerActivity" android:screenOrientation="landscape" android:label="@string/app_name" />`|
-|android.xpermissions |`<uses-permission android:name="android.permission.CAMERA"/><uses-feature android:name="android.hardware.camera" android:required="false"/>`        |
-|android.proguardKeep|` -keep class net.sourceforge.zbar.** {*;} `*NOTE THERE NEEDS TO BE A SPACE BEFORE AND AFTER THIS VALUE*                                           | 
 
 Example Code
 ------------
