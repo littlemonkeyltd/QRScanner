@@ -24,8 +24,8 @@ THE SOFTWARE.
 
 package org.littlemonkey.qrscanner;
 
-import com.codename1.codescan.CodeScanner;
-import com.codename1.codescan.ScanResult;
+import com.codename1.ext.codescan.CodeScanner;
+import com.codename1.ext.codescan.ScanResult;
 import com.codename1.system.NativeLookup;
 import com.codename1.ui.Display;
 
