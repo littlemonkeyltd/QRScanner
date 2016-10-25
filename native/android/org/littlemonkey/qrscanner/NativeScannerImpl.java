@@ -3,6 +3,7 @@ package org.littlemonkey.qrscanner;
 import android.app.Activity;
 import android.content.Intent;
 import android.text.TextUtils;
+import android.Manifest;
 import com.codename1.impl.android.IntentResultListener;
 import com.codename1.io.Log;
 import net.sourceforge.zbar.Symbol;
@@ -20,6 +21,9 @@ public class NativeScannerImpl {
     }
 
     private void scanCode(boolean qrCode) {
+        if(!com.codename1.impl.android.AndroidNativeUtil.checkForPermission(Manifest.permission.CAMERA, "This app needs permission to use your camera in order to scan")){
+            return;
+        }
         final android.app.Activity ctx = com.codename1.impl.android.AndroidNativeUtil.getActivity();
         Intent intent = new Intent(ctx, ZBarScannerActivity.class);
         if (qrCode) {
