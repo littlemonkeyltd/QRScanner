@@ -8,6 +8,7 @@ import com.codename1.io.Log;
 import net.sourceforge.zbar.Symbol;
 import com.dm.zbar.android.scanner.*;
 
+
 public class NativeScannerImpl {
 
     public void scanQRCode() {
@@ -28,7 +29,11 @@ public class NativeScannerImpl {
         }
         com.codename1.impl.android.AndroidNativeUtil.startActivityForResult(intent, new IntentResultListener() {
             public void onActivityResult(int requestCode, int resultCode, Intent data) {
+                
+                Log.p( "res code:"+resultCode);
                 if (resultCode == Activity.RESULT_OK) {
+                    String resultStr = data.getStringExtra(ZBarConstants.SCAN_RESULT);
+                    Log.p("res string:"+resultStr);
                     QRScanner.getCallback().scanCompleted(data.getStringExtra(ZBarConstants.SCAN_RESULT), "QRCODE", data.getStringExtra(ZBarConstants.SCAN_RESULT).getBytes());
                 } else if (resultCode == Activity.RESULT_CANCELED) {
                     if (data != null) {
