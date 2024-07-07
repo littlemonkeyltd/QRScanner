@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="791ac7de-2314-4871-80e8-bb25b13cdfb9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codenameone_codenameone_core_7_0_8_b6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codenameone_codenameone_javase_7_0_8_b6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_7_15_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/qrscanner-android.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/qrscanner-common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/qrscanner-ios.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/src/main/objectivec/com_codename1_ext_codescan_NativeCodeScannerImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/src/main/objectivec/com_codename1_ext_codescan_NativeCodeScannerImpl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/src/main/objectivec/com_codename1_ext_codescan_NativeCodeScannerImpl.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/src/main/objectivec/com_codename1_ext_codescan_NativeCodeScannerImpl.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/qrscanner-javascript.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/qrscanner-javase.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/qrscanner-lib.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/common/qrscanner-tests-common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/qrscanner-tests.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/win/qrscanner-win.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="1pD3iE4rAr4Bw5nFw0V4y00PCKh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Volumes/1TBSSD/Users/shannah/cn1_files/cn1libs/QRScanner/ios/src/main/objectivec"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ios/src/main/objectivec" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-e2c057a1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="791ac7de-2314-4871-80e8-bb25b13cdfb9" name="Default Changelist" comment="" />
+      <created>1614703962614</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614703962614</updated>
+    </task>
+    <servers />
+  </component>
+</project>

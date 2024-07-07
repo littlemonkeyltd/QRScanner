@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="qrscanner-javase" />
+        <module name="qrscanner-tests-common" />
+        <module name="qrscanner-ios" />
+        <module name="qrscanner-android" />
+        <module name="qrscanner-javascript" />
+        <module name="qrscanner-win" />
+        <module name="qrscanner-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="codenameone-maven-manual" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
